@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/search.css" />
+
+    <title>search your Destiny !!!</title>
+  </head>
+
+  <style>
+    #myInput {
+      background-position: 10px 12px;
+      /* Position the search icon */
+      background-repeat: no-repeat;
+      /* Do not repeat the icon image */
+      width: 100%;
+      /* Full-width */
+      font-size: 16px;
+      /* Increase font-size */
+      padding: 12px 20px 12px 40px;
+      /* Add some padding */
+      border: 1px solid #ddd;
+      /* Add a grey border */
+      margin-bottom: 12px;
+      /* Add some space below the input */
+    }
+
+    #myTable {
+      position: relative;
+      border-collapse: collapse;
+      /* Collapse borders */
+      width: 100%;
+      /* Full-width */
+      border: 1px solid #ddd;
+      /* Add a grey border */
+      font-size: 18px;
+      /* Increase font-size */
+      z-index: 3;
+      color: rgb(20, 20, 20);
+    }
+
+    #myTable th {
+      color: darkblue;
+    }
+
+    #myTable th,
+    #myTable td {
+      text-align: left;
+      /* Left-align text */
+      padding: 12px;
+      /* Add padding */
+    }
+
+    #myTable tr {
+      /* Add a bottom border to all table rows */
+      border-bottom: 1px solid #e76a6a;
+    }
+
+    #myTable tr.header,
+    #myTable tr:hover {
+      /* Add a grey background color to the table header and on hover */
+      background-color: #fae5e5;
+    }
+  </style>
+
+  <body>
+    <nav class="navbar2">
+      <div class="image"><img src="images/logo.jpg" alt="" /></div>
+      <a href="index.html">Home</a>
+      <a href="search2.html">Search</a>
+      <a href="recommended.html">Recommended</a>
+      <a href="contact.html">Contact us</a>
+    </nav>
+
+    <div class="main">
+      <div class="search-city">
+        <h1 class="city"><span>SEARCH</span> FOR YOUR DESTINATIONS</h1>
+      </div>
+  
+      <!-- Search-Box -->
+     <section>
+      <div class="search-container">
+        <input
+          type="text"
+          id="myInput"
+          onkeyup="myFunction()"
+          placeholder="ENTER PLACE NAME !!!"
+        />
+        <button type="submit"><i class="bx bx-search-alt-2"></i></button>
+      </div>
+  
+      <!-- Table-Data -->
+      <section id="table-data">
+        <table id="myTable">
+          <tr class="header">
+            <th style="width: 27%;">Popular Destinations</th>
+            <th style="width: 60%;">states</th>
+          </tr>
+          
+              <tr>
+                  <td></td>
+                  <td></td>
+              </tr>
+            <b> <tr>
+                  <td>Taj Mahal </td>
+                  <td>Uttar Pradesh</td>
+              </tr>
+              <tr>
+                  <td>Banaras </td>
+                  <td>Uttar Pradesh</td>
+              </tr>
+              <tr>
+                  <td>kashi Vishwanath </td>
+                  <td>Uttar Pradesh</td>
+              </tr>
+              <tr>
+                  <td>konark temple </td>
+                  <td>Odisha</td>
+              </tr>
+              <tr>
+                  <td>Red fort </td>
+                  <td>Delhi</td>
+              </tr>
+              
+              <tr>
+                  <td>Golden Temple</td>
+                  <td>Punjab </td>
+              </tr>
+              <tr>
+                  <td>Kedarnath</td>
+                  <td>Uttarakhand</td>
+              </tr>
+              <tr>
+                  <td>Rameshwaram</td>
+                  <td>Tamil Naidu</td>
+              </tr>
+              <tr>
+                  <td>Marina Beach</td>
+                  <td>Tamil Naidu </td>
+              </tr>
+              <tr>
+                  <td>Haridwar</td>
+                  <td>Uttarakhand </td>
+              </tr>
+              <tr>
+                  <td>Rishikesh</td>
+                  <td>Uttarakhand</td>
+              </tr>
+              <tr>
+                  <td>Kanya Kumari</td>
+                  <td>Tamil Naidu </td>
+              </tr>
+              
+              <tr>
+                  <td>Qutub Minar </td>
+                  <td>Delhi </td>
+              </tr>
+              <tr>
+                  <td>Shri Jagannath puri </td>
+                  <td>Odisha </td>
+              </tr>
+              <tr>
+                  <td>Somnath </td>
+                  <td>Gujarat </td>
+              </tr>
+              <tr>
+                  <td>Mahakaleshwar </td>
+                  <td>Madhya pradesh </td>
+              </tr>
+              <tr>
+                  <td>Danteshwari temple </td>
+                  <td>Chattishgarh</td>
+              </tr>
+              </b>
+          
+        </table>
+      </section>
+  
+      <!-- Background theme -->
+      <div class="ripple-background">
+        <div class="circle xxlarge shade1"></div>
+        <div class="circle xlarge shade2"></div>
+        <div class="circle large shade3"></div>
+        <div class="circle mediun shade4"></div>
+        <div class="circle small shade5"></div>
+      </div>
+     </section>
+  
+    
+    </div>
+      <!-- JavaScript -->
+    <script src="app.js"></script>
+  </body>
+</html>
